@@ -1,5 +1,5 @@
 ## Siametrics QA Assignment
-#### 1. Basic Programming
+#### 1.1 Basic Programming
 You are given a string word that consists of digits and lowercase English letters.You will replace every non-digit character with a space. For example, ```"a123bc34d8ef34"``` will become ```" 123  34 8  34"```. Notice that you are left with some integers that are separated by at least one space: ```"123", "34", "8"```, and ```"34"```.
 
 Return the number of different integers after performing the replacement operations on word.
@@ -17,7 +17,7 @@ Explanation: The three different integers are "123", "34", and "8". Notice that 
 ##### Example 2:
 
 ```
-Input: word = "leet1234code234"
+Input: word = "via1234link234"
 Output: 2
 ```
 
@@ -28,6 +28,28 @@ Output: 1
 Explanation: The three integers "1", "01", and "001" all represent the same integer because
 the leading zeros are ignored when comparing their decimal values.
 ```
+
+#### 1.2 Phone number
+Given a text file file.txt that contains a list of phone numbers (one per line), write a one-liner bash script to print all valid phone numbers.
+
+You may assume that a valid phone number must appear in one of the following two formats: (xxx) xxx-xxxx or xxx-xxx-xxxx. (x means a digit)
+
+You may also assume each line in the text file must not contain leading or trailing white spaces.
+
+Example:
+
+Assume that file.txt has the following content:
+```
+987-123-4567
+123 456 7890
+(123) 456-7890
+```
+Your script should output the following valid phone numbers:
+```
+987-123-4567
+(123) 456-7890
+```
+
 
 ##### Deliverable
 1. A python script of the solution
